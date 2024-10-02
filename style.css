@@ -1,0 +1,149 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+.redes {
+    display: flex;
+
+    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 15px; /* Controla o espaçamento entre os itens, você pode reduzir ou aumentar */
+}
+
+.redes__elemento {
+    margin: 0; /* Remove margem adicional */
+}
+
+.redes__elemento a {
+    text-decoration: none;
+    color: #000; /* Altere a cor conforme necessário */
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Alinha o texto e imagem verticalmente */
+}
+
+.redes__elemento img {
+    width: 16px; /* Ajuste o tamanho da imagem */
+    margin-left: 5px; /* Pequeno espaçamento entre o texto e a imagem */
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.apresentacao__conteiner {
+    flex: 1; /* Permite que o contêiner do texto ocupe o espaço disponível */
+}
+
+.apresentacao__foto {
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 100px; /* Espaçamento entre o texto e a imagem */
+}
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades__icone {
+    width: 30px; /* Ajuste conforme o tamanho desejado */
+    height: 30px; /* Define uma altura consistente */
+    object-fit: contain; /* Garante que a imagem mantenha suas proporções */
+}
+
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
